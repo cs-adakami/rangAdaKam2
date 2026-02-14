@@ -1,8 +1,10 @@
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   
-  // Ubah nomor WhatsApp di sini. Nomor ini akan diterapkan ke semua tombol WA di bawah.
-  const waNumber = '628216364317';
+  // --- PENGATURAN NOMOR ---
+  const displayPhone = '0821-6364-317'; // Nomor yang terlihat di layar (Format 08)
+  const waNumber = '628216364317';      // Nomor untuk Link WA & Panggilan (Format 62)
+  // ------------------------
 
   function AdaKamiLogoFooter() {
     return (
@@ -69,8 +71,8 @@ export default function Footer() {
               <li>Jakarta Selatan</li>
               <li>DKI Jakarta</li>
               <li className="pt-2">
-                <a href="tel:0889-7318-7761" className="text-green-400 hover:text-green-300 font-semibold transition-colors">
-                  0889-7318-7761
+                <a href={`tel:${waNumber}`} className="text-green-400 hover:text-green-300 font-semibold transition-colors">
+                  {displayPhone}
                 </a>
               </li>
             </ul>
