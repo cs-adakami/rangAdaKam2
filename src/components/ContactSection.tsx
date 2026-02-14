@@ -1,6 +1,11 @@
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export default function ContactSection() {
+  // --- BAGIAN EDIT NOMOR ---
+  const displayPhone = '0821-6364-317'; // Format untuk dilihat user
+  const actionPhone = '628216364317';   // Format untuk sistem (WA & Telpon)
+  // -------------------------
+
   const contactInfo = [
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -11,9 +16,9 @@ export default function ContactSection() {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Telepon',
-      content: '0889-7318-7761',
+      content: displayPhone,
       subContent: 'Tersedia untuk panggilan & WhatsApp',
-      link: 'tel:0889-7318-7761',
+      link: `tel:${actionPhone}`,
     },
     {
       icon: <Mail className="w-6 h-6" />,
@@ -88,7 +93,7 @@ export default function ContactSection() {
             Tim kami siap menjawab semua pertanyaan Anda dengan cepat dan profesional
           </p>
           <button
-            onClick={() => window.open('https://wa.me/6288973187761?text=Halo, saya punya pertanyaan', '_blank')}
+            onClick={() => window.open(`https://wa.me/${actionPhone}?text=Halo, saya punya pertanyaan`, '_blank')}
             className="px-8 py-3 bg-yellow-300 text-green-700 font-bold rounded-xl hover:bg-yellow-400 transition-all duration-300 hover:scale-105 shadow-lg"
           >
             Tanya Sekarang via WhatsApp
