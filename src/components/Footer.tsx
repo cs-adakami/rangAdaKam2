@@ -1,0 +1,80 @@
+import { Shield } from 'lucide-react';
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-gray-900 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div className="md:col-span-2">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-2 bg-blue-600 rounded-xl">
+                <Shield className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold">AdaKami</h3>
+                <p className="text-sm text-gray-400">Layanan Pelanggan Resmi</p>
+              </div>
+            </div>
+            <p className="text-gray-400 text-sm leading-relaxed max-w-md">
+              Pusat informasi dan bantuan resmi AdaKami yang memberikan dukungan terpadu 24 jam untuk kenyamanan dan kepuasan pelanggan.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-white mb-4">Layanan</h4>
+            <ul className="space-y-2 text-sm text-gray-400">
+              <li>
+                <button onClick={() => window.open('https://wa.me/6288973187761?text=Informasi produk', '_blank')} className="hover:text-white transition-colors">
+                  Informasi Produk
+                </button>
+              </li>
+              <li>
+                <button onClick={() => window.open('https://wa.me/6288973187761?text=Bantuan teknis', '_blank')} className="hover:text-white transition-colors">
+                  Bantuan Teknis
+                </button>
+              </li>
+              <li>
+                <button onClick={() => window.open('https://wa.me/6288973187761?text=Pengaturan akun', '_blank')} className="hover:text-white transition-colors">
+                  Pengaturan Akun
+                </button>
+              </li>
+              <li>
+                <button onClick={() => window.open('https://wa.me/6288973187761?text=Konsultasi', '_blank')} className="hover:text-white transition-colors">
+                  Konsultasi
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-white mb-4">Kontak</h4>
+            <ul className="space-y-2 text-sm text-gray-400">
+              <li>Kuningan Timur</li>
+              <li>Jakarta Selatan</li>
+              <li>DKI Jakarta</li>
+              <li className="pt-2">
+                <a href="tel:0889-7318-7761" className="text-blue-400 hover:text-blue-300 font-semibold transition-colors">
+                  0889-7318-7761
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="pt-8 border-t border-gray-800">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-gray-400">
+              © {currentYear} AdaKami. Semua hak cipta dilindungi undang-undang.
+            </p>
+            <div className="flex items-center gap-2 text-xs text-gray-500">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              <span>Layanan Aktif 24/7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
