@@ -1,5 +1,8 @@
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  
+  // Ubah nomor WhatsApp di sini. Nomor ini akan diterapkan ke semua tombol WA di bawah.
+  const waNumber = '628216364317';
 
   function AdaKamiLogoFooter() {
     return (
@@ -37,22 +40,22 @@ export default function Footer() {
             <h4 className="font-bold text-white mb-4">Layanan</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <button onClick={() => window.open('https://wa.me/6288973187761?text=Informasi produk', '_blank')} className="hover:text-white transition-colors">
+                <button onClick={() => window.open(`https://wa.me/${waNumber}?text=Informasi produk`, '_blank')} className="hover:text-white transition-colors">
                   Informasi Produk
                 </button>
               </li>
               <li>
-                <button onClick={() => window.open('https://wa.me/6288973187761?text=Bantuan teknis', '_blank')} className="hover:text-white transition-colors">
+                <button onClick={() => window.open(`https://wa.me/${waNumber}?text=Bantuan teknis`, '_blank')} className="hover:text-white transition-colors">
                   Bantuan Teknis
                 </button>
               </li>
               <li>
-                <button onClick={() => window.open('https://wa.me/6288973187761?text=Pengaturan akun', '_blank')} className="hover:text-white transition-colors">
+                <button onClick={() => window.open(`https://wa.me/${waNumber}?text=Pengaturan akun`, '_blank')} className="hover:text-white transition-colors">
                   Pengaturan Akun
                 </button>
               </li>
               <li>
-                <button onClick={() => window.open('https://wa.me/6288973187761?text=Konsultasi', '_blank')} className="hover:text-white transition-colors">
+                <button onClick={() => window.open(`https://wa.me/${waNumber}?text=Konsultasi`, '_blank')} className="hover:text-white transition-colors">
                   Konsultasi
                 </button>
               </li>
