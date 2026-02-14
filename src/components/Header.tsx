@@ -33,7 +33,7 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-6">
             <a href="tel:0889-7318-7761" className="flex items-center gap-2 text-sm hover:text-green-100 transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="font-semibold">0889-7318-7761</span>
+              <span className="font-semibold">0821-6364-317</span>
             </a>
             <a href="mailto:info@adakami.id" className="flex items-center gap-2 text-sm hover:text-green-100 transition-colors">
               <Mail className="w-4 h-4" />
@@ -58,7 +58,7 @@ export default function Header() {
             </p>
             <div className="flex flex-wrap gap-3">
               <button
-                onClick={() => window.open('https://wa.me/6288973187761?text=Halo, saya memerlukan bantuan', '_blank')}
+                onClick={() => window.open('https://wa.me/628216364317?text=Halo, saya memerlukan bantuan', '_blank')}
                 className="px-6 py-3 bg-yellow-300 text-green-700 font-semibold rounded-xl hover:bg-yellow-400 transition-all duration-300 hover:scale-105 shadow-lg"
               >
                 Hubungi Sekarang
