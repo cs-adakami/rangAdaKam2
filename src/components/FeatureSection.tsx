@@ -1,6 +1,10 @@
 import { Clock, Shield, Zap, Award } from 'lucide-react';
 
 export default function FeatureSection() {
+  // --- UBAH NOMOR WHATSAPP DI SINI ---
+  const waNumber = '628216364317';
+  // -----------------------------------
+
   const features = [
     {
       icon: <Clock className="w-8 h-8" />,
@@ -68,7 +72,7 @@ export default function FeatureSection() {
               Jangan ragu untuk menghubungi kami. Tim profesional kami siap memberikan solusi terbaik untuk kebutuhan Anda.
             </p>
             <button
-              onClick={() => window.open('https://wa.me/6288973187761?text=Halo, saya ingin mendapatkan bantuan', '_blank')}
+              onClick={() => window.open(`https://wa.me/${waNumber}?text=Halo, saya ingin mendapatkan bantuan`, '_blank')}
               className="px-8 py-4 bg-yellow-300 text-green-700 font-bold rounded-xl hover:bg-yellow-400 transition-all duration-300 hover:scale-105 shadow-xl"
             >
               Mulai Konsultasi Gratis
