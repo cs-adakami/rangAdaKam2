@@ -1,7 +1,18 @@
-import { Shield } from 'lucide-react';
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+
+  function AdaKamiLogoFooter() {
+    return (
+      <svg className="w-6 h-6" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="45" fill="white" opacity="0.95"/>
+        <path d="M35 55C35 48 40 42 47 42C54 42 59 48 59 55" stroke="white" strokeWidth="8" fill="none" strokeLinecap="round"/>
+        <path d="M28 65C28 55 35 48 44 48C53 48 60 55 60 65" stroke="white" strokeWidth="6" fill="none" strokeLinecap="round"/>
+        <path d="M65 60C65 52 70 46 77 46C84 46 89 52 89 60" stroke="white" strokeWidth="6" fill="none" strokeLinecap="round"/>
+        <circle cx="50" cy="50" r="6" fill="#FBBF24"/>
+        <circle cx="76" cy="56" r="4" fill="#FBBF24"/>
+      </svg>
+    );
+  }
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -9,8 +20,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="p-2 bg-blue-600 rounded-xl">
-                <Shield className="w-6 h-6" />
+              <div className="p-2 bg-green-600 rounded-xl">
+                <AdaKamiLogoFooter />
               </div>
               <div>
                 <h3 className="text-xl font-bold">AdaKami</h3>
@@ -55,7 +66,7 @@ export default function Footer() {
               <li>Jakarta Selatan</li>
               <li>DKI Jakarta</li>
               <li className="pt-2">
-                <a href="tel:0889-7318-7761" className="text-blue-400 hover:text-blue-300 font-semibold transition-colors">
+                <a href="tel:0889-7318-7761" className="text-green-400 hover:text-green-300 font-semibold transition-colors">
                   0889-7318-7761
                 </a>
               </li>

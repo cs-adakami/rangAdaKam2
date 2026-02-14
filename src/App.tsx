@@ -13,7 +13,7 @@ function App() {
         <Header />
 
         <main className="relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-cyan-50 -z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-white to-emerald-50 -z-10"></div>
 
           <ServiceGrid />
           <FeatureSection />

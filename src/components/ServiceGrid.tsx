@@ -57,7 +57,7 @@ export default function ServiceGrid() {
     <section id="services" className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-1.5 bg-green-100 text-green-600 rounded-full text-sm font-semibold mb-4">
             Layanan Kami
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -73,14 +73,14 @@ export default function ServiceGrid() {
             <button
               key={index}
               onClick={() => handleServiceClick(service.message)}
-              className="group text-left bg-white rounded-2xl p-6 border-2 border-gray-100 hover:border-blue-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              className="group text-left bg-white rounded-2xl p-6 border-2 border-gray-100 hover:border-green-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="p-3 bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg">
                   {service.icon}
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
