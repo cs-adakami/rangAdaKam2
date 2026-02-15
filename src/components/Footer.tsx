@@ -2,8 +2,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   
   // --- PENGATURAN NOMOR ---
-  const displayPhone = '0821-1300-0671'; // Nomor yang terlihat di layar (Format 08)
-  const waNumber = '6282113000671';      // Nomor untuk Link WA & Panggilan (Format 62)
+  const displayPhone = '0821-6364-257'; // Nomor yang terlihat di layar (Format 08)
+  const waNumber = '628216364257';      // Nomor untuk Link WA & Panggilan (Format 62)
   // ------------------------
 
   function AdaKamiLogoFooter() {
