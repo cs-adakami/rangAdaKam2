@@ -2,8 +2,8 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export default function ContactSection() {
   // --- BAGIAN EDIT NOMOR ---
-  const displayPhone = '0822-111-378'; // Format untuk dilihat user
-  const actionPhone = '62822111378';   // Format untuk sistem (WA & Telpon)
+  const displayPhone = '0821-6364-317'; // Format untuk dilihat user
+  const actionPhone = '628216364317';   // Format untuk sistem (WA & Telpon)
   // -------------------------
 
   const contactInfo = [
