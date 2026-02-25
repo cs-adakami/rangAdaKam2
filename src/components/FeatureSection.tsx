@@ -2,7 +2,7 @@ import { Clock, Shield, Zap, Award } from 'lucide-react';
 
 export default function FeatureSection() {
   // --- UBAH NOMOR WHATSAPP DI SINI ---
-  const waNumber = '628137750397';
+  const waNumber = '6287768328162';
   // -----------------------------------
 
   const features = [
