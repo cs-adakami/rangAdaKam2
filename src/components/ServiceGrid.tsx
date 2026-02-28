@@ -8,7 +8,7 @@ interface Service {
 }
 
 export default function ServiceGrid() {
-  const waNumber = '62812827822';
+  const waNumber = '628192140072';
 
   const services: Service[] = [
     {
