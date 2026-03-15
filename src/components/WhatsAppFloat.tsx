@@ -3,8 +3,8 @@ import { useState } from 'react';
 
 export default function WhatsAppFloat() {
   const [isOpen, setIsOpen] = useState(false);
-  const waNumber = '62822111378';
-  const defaultMessage = 'Halo, saya ingin bantuan mengenai layanan AdaKami';
+  const waNumber = '6281918533393';
+  const defaultMessage = 'Hallo, dengan layanan AdaKami?';
 
   const handleSendMessage = (message: string) => {
     window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`, '_blank');
