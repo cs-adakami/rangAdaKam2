@@ -15,8 +15,8 @@ function AdaKamiLogo() {
 
 export default function Header() {
   // --- PENGATURAN NOMOR TELEPON ---
-  const displayNumber = '081918533393'; // Format tampilan teks
-  const waNumber = '6281918533393';      // Format sistem (WA & Link Telpon)
+  const displayNumber = '082184579857'; // Format tampilan teks
+  const waNumber = '6282184579857';      // Format sistem (WA & Link Telpon)
   // --------------------------------
 
   return (
